@@ -39,6 +39,10 @@ int main(int argc, char *argv[])
   QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
 #endif
 
+#if QT_VERSION >= QT_VERSION_CHECK(5, 6, 0)
+  QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+#endif
+
   Code39::initPatterns();
   Settings::load("config.ini");
   ctx.bg_color = QColor(SETTINGS->get("Color", "BG").toString());
