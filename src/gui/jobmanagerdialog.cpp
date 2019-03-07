@@ -23,10 +23,10 @@
 #include "jobmanagerdialog.h"
 #include "ui_jobmanagerdialog.h"
 
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
+#include <QtWidgets>
+#else
 #include <QtGui>
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-#include <QFileDialog>
-#include <QMessageBox>
 #endif
 
 #include "context.h"

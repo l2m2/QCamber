@@ -23,11 +23,12 @@
 #include "viewerwindow.h"
 #include "ui_viewerwindow.h"
 
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
+#include <QtWidgets>
+#else
 #include <QtGui>
-#include <QDebug>
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
-#include <QComboBox>
 #endif
+#include <QDebug>
 
 #include "context.h"
 #include "layerinfobox.h"

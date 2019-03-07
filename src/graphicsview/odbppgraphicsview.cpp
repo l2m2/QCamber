@@ -20,11 +20,11 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+#include "odbppgraphicsview.h"
+
+#if (QT_VERSION >= QT_VERSION_CHECK(5, 0, 0))
 #include <QScrollBar>
 #endif
-
-#include "odbppgraphicsview.h"
 
 #include "context.h"
 #include "graphicslayer.h"
