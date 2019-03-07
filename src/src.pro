@@ -1,5 +1,7 @@
 TEMPLATE = app
 
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+
 MOC_DIR = .build
 UI_DIR = .build
 RCC_DIR = .build
