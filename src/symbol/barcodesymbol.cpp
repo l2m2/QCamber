@@ -120,7 +120,11 @@ QPainterPath BarcodeSymbol::painterPath(void)
   qreal wide = narrow * 3;
 
   for (int i = 0; i < bar_pattern.length(); ++i) {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0 ,0)
+    switch (bar_pattern[i].toLatin1()) {
+#else
     switch (bar_pattern[i].toAscii()) {
+#endif
       case 'W':
         path.addRect(offset, 0, wide, -m_h);
         offset += wide;

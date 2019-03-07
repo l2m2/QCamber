@@ -33,8 +33,13 @@ RectangleSymbol::RectangleSymbol(const QString& def, const Polarity& polarity,
     Symbol(def, "rect([0-9.]+)x([0-9.]+)(?:(x[cr])([0-9.]+)(?:x([1-4]+))?)?", polarity, attrib), m_def(def)
 {
   QRegExp rx(m_pattern);
-  if (!rx.exactMatch(def))
+  if (!rx.exactMatch(def)) {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+    throw InvalidSymbolException(def.toLatin1());
+#else
     throw InvalidSymbolException(def.toAscii());
+#endif
+  }
 
   QStringList caps = rx.capturedTexts();
   m_w = caps[1].toDouble() / 1000.0;
@@ -51,7 +56,11 @@ RectangleSymbol::RectangleSymbol(const QString& def, const Polarity& polarity,
   }
   if (caps[5].length()) {
     m_corners = 0;
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+    QByteArray cors = caps[5].toLatin1();
+#else
     QByteArray cors = caps[5].toAscii();
+#endif
     for (int i = 0; i < cors.count(); ++i) {
       m_corners |= (1 << (cors[i] - '1'));
     }

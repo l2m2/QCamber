@@ -33,8 +33,13 @@ SquareThermalOpenCornersSymbol::SquareThermalOpenCornersSymbol(const QString& de
     Symbol(def, "s_tho([0-9.]+)x([0-9.]+)x([0-9.]+)x([0-9.]+)x([0-9.]+)", polarity, attrib), m_def(def)
 {
   QRegExp rx(m_pattern);
-  if (!rx.exactMatch(def))
+  if (!rx.exactMatch(def)) {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+    throw InvalidSymbolException(def.toLatin1());
+#else
     throw InvalidSymbolException(def.toAscii());
+#endif
+  }
 
   QStringList caps = rx.capturedTexts();
   m_od = caps[1].toDouble() / 1000.0;
