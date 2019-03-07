@@ -121,6 +121,8 @@ void Symbol::setBrush(const QBrush& brush)
 void Symbol::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
       QWidget *widget)
 {
+  Q_UNUSED(option)
+  Q_UNUSED(widget)
   // Paint painterPath
   if (m_polarity == P) {
     painter->setPen(m_pen);

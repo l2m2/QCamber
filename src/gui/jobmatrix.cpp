@@ -158,7 +158,11 @@ void JobMatrix::setMatrix()
           SLOT(selectDrillLine(int)));
   connect(ui->tableWidget,SIGNAL(itemClicked(QTableWidgetItem*)),this,
       SLOT(showLayer(QTableWidgetItem *)));
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+  ui->tableWidget->verticalHeader()->setSectionsMovable(true);
+#else
   ui->tableWidget->verticalHeader()->setMovable(true);
+#endif
   ui->tableWidget->setEditTriggers(QAbstractItemView::NoEditTriggers);
 }
 

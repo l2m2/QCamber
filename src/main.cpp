@@ -21,6 +21,9 @@
  */
 
 #include <QtGui>
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+#include <QApplication>
+#endif
 
 #include "code39.h"
 #include "context.h"
@@ -30,8 +33,10 @@
 int main(int argc, char *argv[])
 {
   QApplication app(argc, argv);
+#if QT_VERSION < QT_VERSION_CHECK(5, 0, 0)
   QApplication::setGraphicsSystem("raster");
   QTextCodec::setCodecForCStrings(QTextCodec::codecForName("UTF-8"));
+#endif
 
   Code39::initPatterns();
   Settings::load("config.ini");

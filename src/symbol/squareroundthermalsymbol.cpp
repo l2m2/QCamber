@@ -84,6 +84,8 @@ QPainterPath SquareRoundThermalSymbol::painterPath(void)
 void SquareRoundThermalSymbol::paint(QPainter *painter,
     const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
+  Q_UNUSED(option)
+  Q_UNUSED(widget)
   if (m_polarity == P) {
     painter->setClipPath(m_sub);
     painter->setPen(m_pen);

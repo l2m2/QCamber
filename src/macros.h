@@ -26,14 +26,30 @@
 #define R2D (180.0 / M_PI)
 #define D2R (M_PI / 180.0)
 
+#if defined(_MSC_VER)
+#include <QStandardItem>
+inline QStandardItem* APPEND_ROW(QStandardItem *root,
+                                 const QString &header,
+                                 const QString &data)
+{
+  QList<QStandardItem*> c;
+  QStandardItem* item = new QStandardItem(header);
+  c.append(item);
+  c.append(new QStandardItem(data));
+  root->appendRow(c);
+  return item;
+}
+#else
 #define APPEND_ROW(root, header, data)                                      \
   ({                                                                        \
-    QList<QStandardItem*> c;                                                \
-    QStandardItem* item = new QStandardItem(header);                        \
-    c.append(item);                                                         \
-    c.append(new QStandardItem(data));                                      \
-    root->appendRow(c);                                                     \
-    item;                                                                   \
+  QList<QStandardItem*> c;                                                \
+  QStandardItem* item = new QStandardItem(header);                        \
+  c.append(item);                                                         \
+  c.append(new QStandardItem(data));                                      \
+  root->appendRow(c);                                                     \
+  item;                                                                   \
   })
+#endif
+
 
 #endif /* __MACROS_H__ */

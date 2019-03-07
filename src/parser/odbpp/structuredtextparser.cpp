@@ -54,7 +54,11 @@ StructuredTextDataStore* StructuredTextParser::parse(void)
 
     yyin = _wfopen(buf, (const wchar_t*)"r");
   } else {
+#if QT_VERSION >= QT_VERSION_CHECK(5, 0, 0)
+    yyin = fopen(m_fileName.toLatin1(), "r");
+#else
     yyin = fopen(m_fileName.toAscii(), "r");
+#endif
   }
 #else
   yyin = fopen(m_fileName.toAscii(), "r");
