@@ -99,7 +99,7 @@ void JobManagerDialog::on_importButton_clicked(void)
   // Decompress tarball
   QStringList args;
 
-#ifdef Q_WS_WIN
+#if defined(Q_WS_WIN) || defined(Q_OS_WIN)
   filename.replace(":", "");
   filename.prepend('/');
 #endif

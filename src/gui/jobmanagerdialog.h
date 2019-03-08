@@ -26,7 +26,7 @@
 #include <QFileSystemModel>
 #include <QWidget>
 
-#ifdef Q_WS_WIN
+#if defined(Q_WS_WIN) || defined(Q_OS_WIN)
 # define TAR_CMD "./tar"
 # define GZIP_CMD "./gzip"
 # define PATH_SEP ";"

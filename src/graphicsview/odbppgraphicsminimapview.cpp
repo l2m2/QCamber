@@ -134,11 +134,13 @@ void ODBPPGraphicsMiniMapView::updateLayerViewport(void)
 
 void ODBPPGraphicsMiniMapView::keyPressEvent(QKeyEvent* event)
 {
+  Q_UNUSED(event)
   // Do nothing
 }
 
 void ODBPPGraphicsMiniMapView::wheelEvent(QWheelEvent* event)
 {
+  Q_UNUSED(event)
   // Do nothing
 }
 

@@ -27,7 +27,7 @@
 #include <QString>
 #include <QStringList>
 
-#ifdef Q_WS_WIN
+#if defined(Q_WS_WIN) || defined(Q_OS_WIN)
 # define GZIP_CMD "./gzip"
 #else
 # define GZIP_CMD "gzip"

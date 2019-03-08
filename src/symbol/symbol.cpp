@@ -162,6 +162,8 @@ void Symbol::restoreColor(void)
 
 void Symbol::mousePressEvent(QGraphicsSceneMouseEvent* event)
 {
+  Q_UNUSED(event)
+
   GraphicsLayerScene* s = dynamic_cast<GraphicsLayerScene*>(scene());
 
   if (!s || !s->highlight() || m_selected) {
@@ -181,4 +183,5 @@ void Symbol::mousePressEvent(QGraphicsSceneMouseEvent* event)
 
 void Symbol::mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event)
 {
+  Q_UNUSED(event)
 }
