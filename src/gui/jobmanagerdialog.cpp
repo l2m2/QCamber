@@ -69,7 +69,9 @@ void JobManagerDialog::on_browseButton_clicked(void)
 {
   QFileDialog diag(NULL, "Choose a tarball", "",
       "ODB++ database (*.tgz *.tar.gz)");
-  diag.exec();
+  if (diag.exec() != QDialog::Accepted) {
+    return;
+  }
 
   QString sel = diag.selectedFiles()[0];
   if (sel.endsWith(".tgz") || sel.endsWith(".tar.gz")) {

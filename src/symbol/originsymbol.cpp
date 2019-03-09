@@ -40,6 +40,9 @@ QRectF OriginSymbol::boundingRect() const
 void OriginSymbol::paint(QPainter *painter,
     const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
+  Q_UNUSED(option)
+  Q_UNUSED(widget)
+
   qreal srad = m_rad * 0.7;
   painter->setPen(QPen(m_pen.color(), 0));
   painter->setBrush(Qt::transparent);
