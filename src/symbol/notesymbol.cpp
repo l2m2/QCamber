@@ -36,7 +36,7 @@ NoteSymbol::NoteSymbol(const NoteRecord* rec): Symbol("note")
   m_y = rec->y;
   m_text = rec->text;
 
-  QDateTime t = QDateTime::fromTime_t(m_timestamp);
+  QDateTime t = QDateTime::fromTime_t(static_cast<uint>(m_timestamp));
   QString noteTmpl("Time: %1\nUser: %2\nNote: %3");
   setToolTip(noteTmpl.arg(t.toString(), m_user, m_text));
 
@@ -63,6 +63,9 @@ QPainterPath NoteSymbol::painterPath(void)
 void NoteSymbol::paint(QPainter *painter,
     const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
+  Q_UNUSED(option)
+  Q_UNUSED(widget)
+
   painter->setPen(QPen(Qt::white, 0));
   painter->setBrush(Qt::gray);
   painter->drawPath(painterPath());
@@ -70,8 +73,10 @@ void NoteSymbol::paint(QPainter *painter,
 
 void NoteSymbol::mousePressEvent(QGraphicsSceneMouseEvent* event)
 {
+  Q_UNUSED(event)
 }
 
 void NoteSymbol::mouseDoubleClickEvent(QGraphicsSceneMouseEvent* event)
 {
+  Q_UNUSED(event)
 }

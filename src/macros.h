@@ -42,12 +42,12 @@ inline QStandardItem* APPEND_ROW(QStandardItem *root,
 #else
 #define APPEND_ROW(root, header, data)                                      \
   ({                                                                        \
-  QList<QStandardItem*> c;                                                \
-  QStandardItem* item = new QStandardItem(header);                        \
-  c.append(item);                                                         \
-  c.append(new QStandardItem(data));                                      \
-  root->appendRow(c);                                                     \
-  item;                                                                   \
+    QList<QStandardItem*> c;                                                \
+    QStandardItem* item = new QStandardItem(header);                        \
+    c.append(item);                                                         \
+    c.append(new QStandardItem(data));                                      \
+    root->appendRow(c);                                                     \
+    item;                                                                   \
   })
 #endif
 

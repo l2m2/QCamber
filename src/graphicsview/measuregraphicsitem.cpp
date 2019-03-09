@@ -44,6 +44,9 @@ void MeasureGraphicsItem::setRect(const QRectF& rect)
 void MeasureGraphicsItem::paint(QPainter *painter,
     const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
+  Q_UNUSED(option)
+  Q_UNUSED(widget)
+
   painter->setPen(QPen(Qt::white));
   painter->setBrush(Qt::transparent);
   painter->drawRect(m_rect);
