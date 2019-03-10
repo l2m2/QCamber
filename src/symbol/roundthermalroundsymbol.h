@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __ROUNDTHERMALROUNDSYMBOL_H__
-#define __ROUNDTHERMALROUNDSYMBOL_H__
+#ifndef ROUNDTHERMALROUNDSYMBOL_H
+#define ROUNDTHERMALROUNDSYMBOL_H
 
 #include "symbol.h"
 
@@ -44,4 +44,4 @@ private:
   qreal m_gap;
 };
 
-#endif /* __ROUNDTHERMALROUNDSYMBOL_H__ */
+#endif /* ROUNDTHERMALROUNDSYMBOL_H */

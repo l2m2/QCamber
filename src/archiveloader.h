@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __ARCHIVE_LOADER_H__
-#define __ARCHIVE_LOADER_H__
+#ifndef ARCHIVE_LOADER_H
+#define ARCHIVE_LOADER_H
 
 #include <QDir>
 #include <QString>
@@ -47,4 +47,4 @@ private:
   QString m_fileName;
 };
 
-#endif /* __ARCHIVE_LOADER_H__ */
+#endif /* ARCHIVE_LOADER_H */

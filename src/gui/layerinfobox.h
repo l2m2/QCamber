@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __LAYERINFOBOX_H__
-#define __LAYERINFOBOX_H__
+#ifndef LAYERINFOBOX_H
+#define LAYERINFOBOX_H
 
 #include <QColor>
 #include <QMenu>
@@ -79,4 +79,4 @@ private:
   FeaturesHistogramWidget m_featuresHistogramWidget;
 };
 
-#endif // __LAYERINFOBOX_H__
+#endif // LAYERINFOBOX_H

@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __SQUAREROUNDTHERMALSYMBOL_H__
-#define __SQUAREROUNDTHERMALSYMBOL_H__
+#ifndef SQUAREROUNDTHERMALSYMBOL_H
+#define SQUAREROUNDTHERMALSYMBOL_H
 
 #include "symbol.h"
 
@@ -47,4 +47,4 @@ private:
   QPainterPath m_sub;
 };
 
-#endif /* __SQUAREROUNDTHERMALSYMBOL_H__ */
+#endif /* SQUAREROUNDTHERMALSYMBOL_H */

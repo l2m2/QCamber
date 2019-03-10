@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __HALFOVALSYMBOL_H__
-#define __HALFOVALSYMBOL_H__
+#ifndef HALFOVALSYMBOL_H
+#define HALFOVALSYMBOL_H
 
 #include "symbol.h"
 
@@ -41,4 +41,4 @@ private:
   qreal m_h;
 };
 
-#endif /* __HALFOVALSYMBOL_H__ */
+#endif /* HALFOVALSYMBOL_H */

@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __BARCODESYMBOL_H__
-#define __BARCODESYMBOL_H__
+#ifndef BARCODESYMBOL_H
+#define BARCODESYMBOL_H
 
 #include "symbol.h"
 
@@ -51,4 +51,4 @@ private:
   BarcodeRecord::AstrPos m_astr_pos;
 };
 
-#endif /* __BARCODESYMBOL_H__ */
+#endif /* BARCODESYMBOL_H */

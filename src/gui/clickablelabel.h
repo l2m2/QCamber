@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __CLICKABLE_LABEL_H__
-#define __CLICKABLE_LABEL_H__
+#ifndef CLICKABLE_LABEL_H
+#define CLICKABLE_LABEL_H
 #include <QLabel>
 
 class ClickableLabel : public QLabel
@@ -40,4 +40,4 @@ protected:
   virtual void mousePressEvent(QMouseEvent *ev);
 };
 
-#endif // __CLICKABLE_LABEL_H__
+#endif // CLICKABLE_LABEL_H

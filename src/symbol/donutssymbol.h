@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __DONUTSSYMBOL_H__
-#define __DONUTSSYMBOL_H__
+#ifndef DONUTSSYMBOL_H
+#define DONUTSSYMBOL_H
 
 #include "symbol.h"
 
@@ -41,4 +41,4 @@ private:
   qreal m_id;
 };
 
-#endif /* __DONUTSSYMBOL_H__ */
+#endif /* DONUTSSYMBOL_H */

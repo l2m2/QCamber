@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __BUTTERFLYSYMBOL_H__
-#define __BUTTERFLYSYMBOL_H__
+#ifndef BUTTERFLYSYMBOL_H
+#define BUTTERFLYSYMBOL_H
 
 #include "symbol.h"
 
@@ -40,4 +40,4 @@ private:
   qreal m_r;
 };
 
-#endif /* __BUTTERFLYSYMBOL_H__ */
+#endif /* BUTTERFLYSYMBOL_H */

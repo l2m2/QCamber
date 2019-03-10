@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __SETTINGS_H__
-#define __SETTINGS_H__
+#ifndef SETTINGS_H
+#define SETTINGS_H
 
 #include <QSettings>
 #include <QVariant>
@@ -43,4 +43,4 @@ private:
 
 #define SETTINGS (Settings::instance())
 
-#endif /* __SETTINGS_H__ */
+#endif /* SETTINGS_H */

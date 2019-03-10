@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __ELLIPSESYMBOL_H__
-#define __ELLIPSESYMBOL_H__
+#ifndef ELLIPSESYMBOL_H
+#define ELLIPSESYMBOL_H
 
 #include "symbol.h"
 
@@ -41,4 +41,4 @@ private:
   qreal m_h;
 };
 
-#endif /* __ELLIPSESYMBOL_H__ */
+#endif /* ELLIPSESYMBOL_H */

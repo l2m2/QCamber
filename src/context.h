@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __CONTEXT_H__
-#define __CONTEXT_H__
+#ifndef CONTEXT_H
+#define CONTEXT_H
 
 #include "archiveloader.h"
 #include "featuresparser.h"
@@ -38,4 +38,4 @@ struct Context {
 
 extern Context ctx;
 
-#endif /* __CONTEXT_H__ */
+#endif /* CONTEXT_H */

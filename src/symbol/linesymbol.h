@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __LINESYMBOL_H__
-#define __LINESYMBOL_H__
+#ifndef LINESYMBOL_H
+#define LINESYMBOL_H
 
 #include "symbol.h"
 
@@ -46,4 +46,4 @@ private:
   int m_dcode;
 };
 
-#endif /* __LineSymbol_H__ */
+#endif /* LINESYMBOL_H */

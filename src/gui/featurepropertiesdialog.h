@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __FEATUREPROPERTIESDIALOG_H__
-#define __FEATUREPROPERTIESDIALOG_H__
+#ifndef FEATUREPROPERTIESDIALOG_H
+#define FEATUREPROPERTIESDIALOG_H
 
 #include <QDialog>
 
@@ -46,4 +46,4 @@ private:
   Ui::FeaturePropertiesDialog *ui;
 };
 
-#endif // __FEATUREPROPERTIESDIALOG_H__
+#endif // FEATUREPROPERTIESDIALOG_H

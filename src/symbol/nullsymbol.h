@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __NULLSYMBOL_H__
-#define __NULLSYMBOL_H__
+#ifndef NULLSYMBOL_H
+#define NULLSYMBOL_H
 
 #include "symbol.h"
 

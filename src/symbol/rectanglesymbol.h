@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __RECTANGLESYMBOL_H__
-#define __RECTANGLESYMBOL_H__
+#ifndef RECTANGLESYMBOL_H
+#define RECTANGLESYMBOL_H
 
 #include "symbol.h"
 
@@ -49,4 +49,4 @@ private:
   int m_corners;
 };
 
-#endif /* __RECTANGLESYMBOL_H__ */
+#endif /* RECTANGLESYMBOL_H */

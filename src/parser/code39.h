@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __CODE_39_H__
-#define __CODE_39_H__
+#ifndef CODE_39_H
+#define CODE_39_H
 
 #include <QChar>
 #include <QMap>
@@ -44,4 +44,4 @@ private:
   static QMap<QChar, QString> s_fascmap;
 };
 
-#endif /* __CODE_39_H__ */
+#endif /* CODE_39_H */

@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __MEASUREGRAPHICSITEM__
-#define __MEASUREGRAPHICSITEM__
+#ifndef MEASUREGRAPHICSITEM_H
+#define MEASUREGRAPHICSITEM_H
 
 #include <QGraphicsItem>
 
@@ -39,4 +39,4 @@ private:
   QRectF m_rect;
 };
 
-#endif /* __MEASUREGRAPHICSITEM__ */
+#endif /* MEASUREGRAPHICSITEM_H */

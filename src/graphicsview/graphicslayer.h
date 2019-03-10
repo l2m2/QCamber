@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __GRAPHICSLAYER_H__
-#define __GRAPHICSLAYER_H__
+#ifndef GRAPHICSLAYER_H
+#define GRAPHICSLAYER_H
 
 #include <QGraphicsScene>
 
@@ -61,4 +61,4 @@ protected:
   bool m_showOutline;
 };
 
-#endif /* __GRAPHICSLAYER_H__ */
+#endif /* GRAPHICSLAYER_H */

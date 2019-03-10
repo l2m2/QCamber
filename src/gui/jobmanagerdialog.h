@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __JOBMANAGERDIALOG_H__
-#define __JOBMANAGERDIALOG_H__
+#ifndef JOBMANAGERDIALOG_H
+#define JOBMANAGERDIALOG_H
 
 #include <QFileSystemModel>
 #include <QWidget>
@@ -65,4 +65,4 @@ private:
   QString m_rootDirName;
 };
 
-#endif // __JOBMANAGERDIALOG_H__
+#endif // JOBMANAGERDIALOG_H

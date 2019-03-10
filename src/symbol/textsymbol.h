@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __TEXTSYMBOL_H__
-#define __TEXTSYMBOL_H__
+#ifndef TEXTSYMBOL_H
+#define TEXTSYMBOL_H
 
 #include "symbol.h"
 
@@ -48,4 +48,4 @@ protected:
   int m_version;
 };
 
-#endif /* __TEXTSYMBOL_H__ */
+#endif /* TEXTSYMBOL_H */

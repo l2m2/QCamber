@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __LAYERFEATURES_H__
-#define __LAYERFEATURES_H__
+#ifndef LAYERFEATURES_H
+#define LAYERFEATURES_H
 
 #include <QGraphicsScene>
 #include <QGridLayout>
@@ -88,4 +88,4 @@ private:
   unsigned m_negBarcodeCount;
 };
 
-#endif /* __LAYERFEATURES_H__ */
+#endif /* LAYERFEATURES_H */

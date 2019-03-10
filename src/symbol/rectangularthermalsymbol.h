@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __RECTANGULARTHERMALSYMBOL_H__
-#define __RECTANGULARTHERMALSYMBOL_H__
+#ifndef RECTANGULARTHERMALSYMBOL_H
+#define RECTANGULARTHERMALSYMBOL_H
 
 #include "symbol.h"
 
@@ -49,4 +49,4 @@ private:
   }
 };
 
-#endif /* __RECTANGULARTHERMALSYMBOL_H__ */
+#endif /* RECTANGULARTHERMALSYMBOL_H */

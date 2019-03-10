@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __SYMBOL_POOL_H__
-#define __SYMBOL_POOL_H__
+#ifndef SYMBOL_POOL_H
+#define SYMBOL_POOL_H
 
 #include "symbolfactory.h"
 #include <QMap>
@@ -43,4 +43,4 @@ private:
 
 #define SYMBOLPOOL (SymbolPool::instance())
 
-#endif /* __SYMBOL_POOL_H__ */
+#endif /* SYMBOL_POOL_H */

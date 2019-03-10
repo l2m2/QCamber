@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __DIAMONDSYMBOL_H__
-#define __DIAMONDSYMBOL_H__
+#ifndef DIAMONDSYMBOL_H
+#define DIAMONDSYMBOL_H
 
 #include "symbol.h"
 
@@ -41,4 +41,4 @@ private:
   qreal m_h;
 };
 
-#endif /* __DIAMONDSYMBOL_H__ */
+#endif /* DIAMONDSYMBOL_H */

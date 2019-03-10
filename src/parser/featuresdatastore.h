@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __FEATURES_DATASTORE_H__
-#define __FEATURES_DATASTORE_H__
+#ifndef FEATURES_DATASTORE_H
+#define FEATURES_DATASTORE_H
 
 #include <QList>
 #include <QMap>
@@ -108,4 +108,4 @@ private:
   QList<Record*> m_records;
 };
 
-#endif /* __FEATURES_DATASTORE_H__ */
+#endif /* FEATURES_DATASTORE_H */

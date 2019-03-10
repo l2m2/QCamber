@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __RECORD_H__
-#define __RECORD_H__
+#ifndef RECORD_H
+#define RECORD_H
 
 #include <QGraphicsScene>
 #include <QMap>
@@ -189,4 +189,4 @@ struct NoteRecord: public Record {
   QString text;
 };
 
-#endif /* __RECORD_H__ */
+#endif /* RECORD_H */

@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __FONT_DATASTORE_H__
-#define __FONT_DATASTORE_H__
+#ifndef FONT_DATASTORE_H
+#define FONT_DATASTORE_H
 
 #include "datastore.h"
 #include "record.h"
@@ -46,4 +46,4 @@ private:
   QMap<char, CharRecord*> m_records;
 };
 
-#endif /* __FONT_DATASTORE_H__ */
+#endif /* FONT_DATASTORE_H */

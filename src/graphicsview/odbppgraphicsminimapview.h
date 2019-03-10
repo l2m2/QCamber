@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __ODBPPGRAPHICSMINIMAPVIEW_H__
-#define __ODBPPGRAPHICSMINIMAPVIEW_H__
+#ifndef ODBPPGRAPHICSMINIMAPVIEW_H
+#define ODBPPGRAPHICSMINIMAPVIEW_H
 
 #include <QGraphicsView>
 #include <QGraphicsRectItem>
@@ -62,4 +62,4 @@ private:
   Profile* m_profile;
 };
 
-#endif /* __ODBPPGRAPHICSMINIMAPVIEW_H__ */
+#endif /* ODBPPGRAPHICSMINIMAPVIEW_H */

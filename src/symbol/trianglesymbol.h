@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __TRIANGLESYMBOL_H__
-#define __TRIANGLESYMBOL_H__
+#ifndef TRIANGLESYMBOL_H
+#define TRIANGLESYMBOL_H
 
 #include "symbol.h"
 
@@ -41,4 +41,4 @@ private:
   qreal m_h;
 };
 
-#endif /* __TRIANGLESYMBOL_H__ */
+#endif /* TRIANGLESYMBOL_H */

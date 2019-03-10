@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __PROFILE_H__
-#define __PROFILE_H__
+#ifndef PROFILE_H
+#define PROFILE_H
 
 #include <QString>
 #include <QGraphicsScene>
@@ -46,4 +46,4 @@ private:
   LayerFeatures* m_features;
 };
 
-#endif /* __PROFILE_H__ */
+#endif /* PROFILE_H */

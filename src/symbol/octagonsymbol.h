@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __OCTAGONSYMBOL_H__
-#define __OCTAGONSYMBOL_H__
+#ifndef OCTAGONSYMBOL_H
+#define OCTAGONSYMBOL_H
 
 #include "symbol.h"
 
@@ -42,4 +42,4 @@ private:
   qreal m_r;
 };
 
-#endif /* __OCTAGONSYMBOL_H__ */
+#endif /* OCTAGONSYMBOL_H */

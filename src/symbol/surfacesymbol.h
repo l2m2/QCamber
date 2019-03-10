@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __SURFACESYMBOL_H__
-#define __SURFACESYMBOL_H__
+#ifndef SURFACESYMBOL_H
+#define SURFACESYMBOL_H
 
 #include "symbol.h"
 
@@ -45,4 +45,4 @@ private:
   QList<PolygonRecord*> m_polygons;
 };
 
-#endif /* __SURFACESYMBOL_H__ */
+#endif /* SURFACESYMBOL_H */

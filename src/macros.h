@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __MACROS_H__
-#define __MACROS_H__
+#ifndef MACROS_H
+#define MACROS_H
 
 #define R2D (180.0 / M_PI)
 #define D2R (M_PI / 180.0)
@@ -52,4 +52,4 @@ inline QStandardItem* APPEND_ROW(QStandardItem *root,
 #endif
 
 
-#endif /* __MACROS_H__ */
+#endif /* MACROS_H */

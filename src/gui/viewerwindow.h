@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __MAINWINDOW_H__
-#define __MAINWINDOW_H__
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
 #include <QColor>
 #include <QLabel>
@@ -111,4 +111,4 @@ private:
   FeaturePropertiesDialog* m_featurePropertiesDialog;
 };
 
-#endif // __MAINWINDOW_H__
+#endif // MAINWINDOW_H

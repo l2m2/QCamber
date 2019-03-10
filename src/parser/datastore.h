@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __DATASTORE_H__
-#define __DATASTORE_H__
+#ifndef DATASTORE_H
+#define DATASTORE_H
 
 class DataStore {
 public:
@@ -29,4 +29,4 @@ public:
   virtual void dump(void) = 0;
 };
 
-#endif /* __DATASTORE_H__ */
+#endif /* DATASTORE_H */

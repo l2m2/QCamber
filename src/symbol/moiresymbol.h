@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __MOIRESYMBOL_H__
-#define __MOIRESYMBOL_H__
+#ifndef MOIRESYMBOL_H
+#define MOIRESYMBOL_H
 
 #include "symbol.h"
 
@@ -49,4 +49,4 @@ private:
   QPainterPath m_linePath;
 };
 
-#endif /* __MOIRESYMBOL_H__ */
+#endif /* MOIRESYMBOL_H */

@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __HOLESYMBOL_H__
-#define __HOLESYMBOL_H__
+#ifndef HOLESYMBOL_H
+#define HOLESYMBOL_H
 
 #include "symbol.h"
 
@@ -43,4 +43,4 @@ private:
   qreal m_tm;
 };
 
-#endif /* __HOLESYMBOL_H__ */
+#endif /* HOLESYMBOL_H */

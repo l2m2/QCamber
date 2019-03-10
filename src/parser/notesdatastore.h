@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __NOTES_DATASTORE_H__
-#define __NOTES_DATASTORE_H__
+#ifndef NOTES_DATASTORE_H
+#define NOTES_DATASTORE_H
 
 #include "datastore.h"
 #include "record.h"
@@ -37,4 +37,4 @@ private:
   QList<NoteRecord*> m_records;
 };
 
-#endif /* __NOTES_DATASTORE_H__ */
+#endif /* NOTES_DATASTORE_H */

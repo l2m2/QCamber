@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __PARSER_H__
-#define __PARSER_H__
+#ifndef PARSER_H
+#define PARSER_H
 
 #include "datastore.h"
 
@@ -40,4 +40,4 @@ protected:
   QString m_fileName;
 };
 
-#endif /* __PARSER_H__ */
+#endif /* PARSER_H */

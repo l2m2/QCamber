@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __SETTINGSDIALOG_H__
-#define __SETTINGSDIALOG_H__
+#ifndef SETTINGSDIALOG_H
+#define SETTINGSDIALOG_H
 
 #include <QDialog>
 #include <QSignalMapper>
@@ -56,4 +56,4 @@ private:
   QSignalMapper* m_sigMapper;
 };
 
-#endif // __SETTINGSDIALOG_H__
+#endif // SETTINGSDIALOG_H

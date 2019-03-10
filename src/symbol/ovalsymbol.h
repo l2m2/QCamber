@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __OVALSYMBOL_H__
-#define __OVALSYMBOL_H__
+#ifndef OVALSYMBOL_H
+#define OVALSYMBOL_H
 
 #include "symbol.h"
 
@@ -41,4 +41,4 @@ private:
   qreal m_h;
 };
 
-#endif /* __OVALSYMBOL_H__ */
+#endif /* OVALSYMBOL_H */

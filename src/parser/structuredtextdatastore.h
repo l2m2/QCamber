@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __STRUCTURED_TEXT_DATASTORE_H__
-#define __STRUCTURED_TEXT_DATASTORE_H__
+#ifndef STRUCTURED_TEXT_DATASTORE_H
+#define STRUCTURED_TEXT_DATASTORE_H
 
 #include <map>
 #include <string>
@@ -72,4 +72,4 @@ private:
   string m_currentElementName;
 };
 
-#endif /* __STRUCTURED_TEXT_DATASTORE_H__ */
+#endif /* STRUCTURED_TEXT_DATASTORE_H */
