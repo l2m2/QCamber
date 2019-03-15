@@ -40,8 +40,8 @@ public:
 
 private:
   int m_dcode;
-  int m_holeCount;
-  int m_islandCount;
+  int m_holeCount = 0;
+  int m_islandCount = 0;
   QList<PolygonRecord*> m_polygons;
 };
 

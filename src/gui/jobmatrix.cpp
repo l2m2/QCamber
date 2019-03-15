@@ -142,13 +142,13 @@ void JobMatrix::setMatrix()
   ip = m_ds->getBlocksByKey("LAYER");
   for (StructuredTextDataStore::BlockIter it = ip.first; it != ip.second; ++it)
   {
-    text = (QString)it->second->get("TYPE").c_str();
+    text = QString(it->second->get("TYPE").c_str());
     if(text == "DRILL"){
-        start = (QString)it->second->get("START_NAME").c_str();
-        end = (QString)it->second->get("END_NAME").c_str();
+        start = QString(it->second->get("START_NAME").c_str());
+        end = QString(it->second->get("END_NAME").c_str());
         if(start != "")
         {
-          drawDrillLine((QString)it->second->get("NAME").c_str(),
+          drawDrillLine(QString(it->second->get("NAME").c_str()),
                         m_layerNames.indexOf(start),m_layerNames.indexOf(end));
         }
     }
@@ -210,11 +210,12 @@ void JobMatrix::selectDrillLine(int index)
   {
     for(int row = 0;row < m_layerNames.size();row++)
     {
-      if (((item = ui->tableWidget->item(row,col)) != 0))
-        if(col != target_col)
+      if (((item = ui->tableWidget->item(row,col)) != nullptr))
+        if(col != target_col) {
           item->setBackgroundColor(QColor("black"));
-        else
+        } else {
           item->setBackgroundColor(QColor("red"));
+        }
     }
   }
 }
