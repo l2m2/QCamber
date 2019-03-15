@@ -28,9 +28,9 @@
 #include "context.h"
 
 LayerFeatures::LayerFeatures(QString step, QString path, bool stepRepeat):
-  Symbol("features"), m_step(step), m_path(path), m_scene(NULL),
+  Symbol("features"), m_step(step), m_path(path), m_scene(nullptr),
   m_stepRepeatLoaded(false), m_showStepRepeat(stepRepeat),
-  m_reportModel(NULL)
+  m_reportModel(nullptr)
 {
   setHandlesChildEvents(true);
 
@@ -276,7 +276,7 @@ void LayerFeatures::setShowStepRepeat(bool status)
 
   if (m_reportModel) {
     delete m_reportModel;
-    m_reportModel = NULL;
+    m_reportModel = nullptr;
   }
 
   if (status && !m_stepRepeatLoaded) {
@@ -313,7 +313,7 @@ QStandardItemModel* LayerFeatures::reportModel(void)
   const FeaturesDataStore::IDMapType& nameMap = m_ds->symbolNameMap();
   FeaturesDataStore::CountMapType countMap;
   QStandardItem* root = m_reportModel->invisibleRootItem();
-  QStandardItem* node = NULL;
+  QStandardItem* node = nullptr;
 
   unsigned total = 0, n_nodes = 0;
 

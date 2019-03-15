@@ -64,9 +64,9 @@ StructuredTextDataStore* StructuredTextParser::parse(void)
   yyin = fopen(m_fileName.toAscii(), "r");
 #endif
 
-  if (yyin == NULL) {
+  if (yyin == nullptr) {
     qDebug("parse: can't open `%s' for reading", qPrintable(m_fileName));
-    return NULL;
+    return nullptr;
   }
 
   yyctx.stds = new StructuredTextDataStore;

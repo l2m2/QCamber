@@ -22,7 +22,7 @@
 
 #include "symbolpool.h"
 
-SymbolPool* SymbolPool::m_instance = NULL;
+SymbolPool* SymbolPool::m_instance = nullptr;
 
 SymbolPool::SymbolPool()
 {
@@ -35,7 +35,7 @@ SymbolPool::~SymbolPool()
       it != m_cache.end(); ++it) {
     delete it.value();
   }
-  m_instance = NULL;
+  m_instance = nullptr;
 }
 
 SymbolPool* SymbolPool::instance()

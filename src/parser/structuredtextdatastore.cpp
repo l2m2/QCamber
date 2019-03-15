@@ -34,7 +34,7 @@ int StructuredTextDataStore::dumpIndent = 0;
 StructuredTextDataStore::StructuredTextDataStore()
 {
   m_mode = KEY_VALUE;
-  m_currentBlock = NULL;
+  m_currentBlock = nullptr;
 }
 
 void StructuredTextDataStore::put(string key, string value)
@@ -51,7 +51,7 @@ void StructuredTextDataStore::put(string key, string value)
 
 void StructuredTextDataStore::newElement(string name)
 {
-  if (m_currentBlock != NULL) { // nested block
+  if (m_currentBlock != nullptr) { // nested block
     m_currentBlock->newElement(name);
   } else {
     m_mode = BLOCK;
@@ -66,11 +66,11 @@ bool StructuredTextDataStore::commitElement(void)
     return false;
   }
 
-  if (m_currentBlock != NULL) {
+  if (m_currentBlock != nullptr) {
     if (!m_currentBlock->commitElement()) {
       m_mode = KEY_VALUE;
       m_blockData.insert(std::make_pair(m_currentElementName, m_currentBlock));
-      m_currentBlock = NULL;
+      m_currentBlock = nullptr;
       return true;
     }
   }

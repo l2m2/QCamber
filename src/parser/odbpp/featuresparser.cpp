@@ -32,7 +32,7 @@
 #include "record.h"
 
 FeaturesParser::FeaturesParser(const QString& filename):
-  Parser(filename), m_ds(NULL)
+  Parser(filename), m_ds(nullptr)
 {
 }
 
@@ -45,7 +45,7 @@ FeaturesDataStore* FeaturesParser::parse(void)
   QFile file(m_fileName);
   if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
     qDebug("parse: can't open `%s' for reading", qPrintable(m_fileName));
-    return NULL;
+    return nullptr;
   }
 
   FeaturesDataStore* ds = new FeaturesDataStore;
@@ -246,13 +246,13 @@ void FeaturesParser::parseSurfaceLineData(const QString& line)
     op->cw = (param[++i] == "Y");
     m_currentSurface->currentRecord->operations.append(op);
   } else if (line.startsWith("OE")) {
-    m_currentSurface->currentRecord = NULL;
+    m_currentSurface->currentRecord = nullptr;
   }
 }
 
 void FeaturesParser::parseSurfaceEnd()
 {
-  m_currentSurface = NULL;
+  m_currentSurface = nullptr;
 }
 
 void FeaturesParser::parseAttributes(const QString& line,

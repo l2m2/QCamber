@@ -26,7 +26,7 @@
 #include <QDebug>
 #include <QTransform>
 
-Profile::Profile(QString step, bool stepRepeat): GraphicsLayer(NULL)
+Profile::Profile(QString step, bool stepRepeat): GraphicsLayer(nullptr)
 {
   setHandlesChildEvents(true);
 

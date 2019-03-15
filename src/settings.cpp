@@ -22,7 +22,7 @@
 
 #include "settings.h"
 
-Settings* Settings::m_Instance = NULL;
+Settings* Settings::m_Instance = nullptr;
 
 Settings* Settings::instance()
 {

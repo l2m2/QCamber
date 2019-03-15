@@ -69,7 +69,7 @@ public:
       QWidget *widget);
   virtual QPainterPath shape() const {
     return const_cast<Symbol*>(this)->painterPath();
-  };
+  }
 
 protected:
   virtual void mousePressEvent(QGraphicsSceneMouseEvent* event);

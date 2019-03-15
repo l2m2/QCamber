@@ -20,8 +20,8 @@
  * Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-#ifndef __CACHED_PARSER_H__
-#define __CACHED_PARSER_H__
+#ifndef CACHED_PARSER_H
+#define CACHED_PARSER_H
 
 #include <QMap>
 #include <QString>
@@ -87,4 +87,4 @@ typedef CachedParser<FeaturesParser, FeaturesDataStore> CachedFeaturesParser;
 typedef CachedParser<FontParser, FontDataStore> CachedFontParser;
 typedef CachedParser<StructuredTextParser, StructuredTextDataStore> CachedStructuredTextParser;
 
-#endif /* __CACHED_PARSER_H__ */
+#endif /* CACHED_PARSER_H */

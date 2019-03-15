@@ -31,7 +31,7 @@
 #include "symbolfactory.h"
 
 ODBPPGraphicsView::ODBPPGraphicsView(QWidget* parent): QGraphicsView(parent),
-  m_profile(NULL)
+  m_profile(nullptr)
 {
   m_scene = new ODBPPGraphicsScene(this);
   m_scene->setItemIndexMethod(QGraphicsScene::NoIndex);

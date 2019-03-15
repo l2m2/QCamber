@@ -30,7 +30,7 @@
 #include "fontparser.h"
 
 BarcodeSymbol::BarcodeSymbol(const BarcodeRecord* rec):
-  TextSymbol(NULL)
+  TextSymbol(nullptr)
 {
   m_polarity = rec->polarity;
   m_x = rec->x;

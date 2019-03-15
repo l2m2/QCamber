@@ -31,7 +31,7 @@
 TextSymbol::TextSymbol(const TextRecord* rec):
   Symbol("Text", "Text")
 {
-  if (rec == NULL) {
+  if (rec == nullptr) {
     return;
   }
 

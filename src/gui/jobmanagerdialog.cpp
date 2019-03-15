@@ -67,7 +67,7 @@ JobManagerDialog::~JobManagerDialog()
 
 void JobManagerDialog::on_browseButton_clicked(void)
 {
-  QFileDialog diag(NULL, "Choose a tarball", "",
+  QFileDialog diag(nullptr, "Choose a tarball", "",
       "ODB++ database (*.tgz *.tar.gz)");
   if (diag.exec() != QDialog::Accepted) {
     return;
@@ -133,7 +133,7 @@ void JobManagerDialog::on_importButton_clicked(void)
   StructuredTextParser parser(matrix);
   StructuredTextDataStore* ds = parser.parse();
 
-  if (ds == NULL) {
+  if (ds == nullptr) {
     QMessageBox::critical(this, "Error",
         QString("`%1' is not a valid ODB++ database.").arg(filename));
     recurRemove(extractDir);
@@ -205,7 +205,7 @@ void JobManagerDialog::on_removeButton_clicked(void)
 
 void JobManagerDialog::on_setRootButton_clicked(void)
 {
-  QFileDialog diag(NULL, "Choose a directory", m_rootDirName);
+  QFileDialog diag(nullptr, "Choose a directory", m_rootDirName);
   diag.setFileMode(QFileDialog::Directory);
   diag.setOption(QFileDialog::ShowDirsOnly);
 

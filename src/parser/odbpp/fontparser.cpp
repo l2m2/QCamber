@@ -40,7 +40,7 @@ FontDataStore* FontParser::parse(void)
   
   if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
     qDebug("parse: can't open `%s' for reading", qPrintable(m_fileName));
-    return NULL;
+    return nullptr;
   }
 
   bool block = false;
@@ -89,5 +89,5 @@ void FontParser::charLineData(const QStringList& param)
 
 void FontParser::charEnd(void)
 {
-  m_currentChar = NULL;
+  m_currentChar = nullptr;
 }

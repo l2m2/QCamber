@@ -37,7 +37,7 @@
 
 ViewerWindow::ViewerWindow(QWidget *parent) :
   QMainWindow(parent), ui(new Ui::ViewerWindow), m_displayUnit(U_INCH),
-  m_activeInfoBox(NULL), m_transition(false)
+  m_activeInfoBox(nullptr), m_transition(false)
 {
   ui->setupUi(this);
   setAttribute(Qt::WA_DeleteOnClose);
@@ -233,7 +233,7 @@ void ViewerWindow::loadColorConfig()
 
 void ViewerWindow::unitChanged(int index)
 {
-  m_displayUnit = (DisplayUnit)index;
+  m_displayUnit = static_cast<DisplayUnit>(index);
 }
 
 void ViewerWindow::updateCursorCoord(QPointF pos)

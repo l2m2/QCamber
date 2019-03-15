@@ -30,7 +30,7 @@
 GraphicsLayer::GraphicsLayer(QGraphicsItem* parent):
   QGraphicsItem(parent), m_showOutline(false)
 {
-  m_layerScene = NULL;
+  m_layerScene = nullptr;
 }
 
 GraphicsLayer::~GraphicsLayer()
