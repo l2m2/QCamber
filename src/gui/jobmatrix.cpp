@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file   jobmatrix.cpp
  * @author Wei-Ning Huang (AZ) <aitjcize@gmail.com>
  *

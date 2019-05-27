@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file   odbppgraphicsview.cpp
  * @author Wei-Ning Huang (AZ) <aitjcize@gmail.com>
  *
@@ -211,8 +211,12 @@ void ODBPPGraphicsView::updateLayerViewport(void)
 
 void ODBPPGraphicsView::wheelEvent(QWheelEvent *event)
 {
+  // disable scaling when wheeling
+  Q_UNUSED(event)
+#if 0
   setTransformationAnchor(AnchorUnderMouse);
   scaleView(pow((double)2, -event->delta() / 240.0));
+#endif
 }
 
 void ODBPPGraphicsView::keyPressEvent(QKeyEvent* event)
